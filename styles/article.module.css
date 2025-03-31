@@ -6,7 +6,7 @@
     margin: 0 auto;
     padding: 20px;
   }
-  
+
   @media (min-width: 992px) {
     .pageContainer {
       flex-direction: row;
@@ -17,7 +17,7 @@
     flex: 1;
     margin-right: 0;
   }
-  
+
   @media (min-width: 992px) {
     .mainContent {
       margin-right: 30px;
@@ -137,6 +137,7 @@
     margin-bottom: 15px;
     padding-bottom: 10px;
     border-bottom: 1px solid #eee;
+    color: #000; /* タイトル色を黒に設定 */
   }
   
   .relatedList {
@@ -223,7 +224,8 @@
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+    color: #000; /* コメント一覧全体のテキスト色を黒に設定 */
+}
   
   .commentItem {
     padding: 15px 0;
@@ -274,6 +276,11 @@
   }
   
   .adBanner {
+    display: flex;
+    flex-direction: column;  /* 要素を縦方向に配置 */
+    align-items: center;     /* 中央揃え */
+    gap: 10px;               /* 要素間のスペース */
+    padding: 10px;
     background-color: #f8f8f8;
     border-radius: 8px;
     height: 250px;
