@@ -1,0 +1,362 @@
+/* /styles/article.module.css */
+.pageContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  @media (min-width: 992px) {
+    .pageContainer {
+      flex-direction: row;
+    }
+  }
+  
+  .mainContent {
+    flex: 1;
+    margin-right: 0;
+  }
+  
+  @media (min-width: 992px) {
+    .mainContent {
+      margin-right: 30px;
+    }
+  }
+  
+  .sideContent {
+    width: 100%;
+  }
+  
+  @media (min-width: 992px) {
+    .sideContent {
+      width: 300px;
+    }
+  }
+  
+  /* 記事詳細スタイル */
+  .articleContainer {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .articleMeta {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .category {
+    background-color: #f7f7f7;
+    padding: 3px 8px;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+  
+  .source {
+    margin-right: 10px;
+  }
+  
+  .articleTitle {
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+  
+  .articleImage {
+    margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  
+  .articleAuthor {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .articleContent {
+    line-height: 1.8;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+  
+  .articleContent p {
+    margin-bottom: 1.5em;
+  }
+  
+  .socialButtons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .shareButton, .tweetButton, .lineButton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .shareButton {
+    background-color: #3b5998;
+    color: white;
+  }
+  
+  .tweetButton {
+    background-color: #1da1f2;
+    color: white;
+  }
+  
+  .lineButton {
+    background-color: #06c755;
+    color: white;
+  }
+  
+  /* 関連記事スタイル */
+  .relatedArticles {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .relatedTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .relatedList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .relatedItem {
+    margin-bottom: 15px;
+  }
+  
+  .relatedItemInner {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .relatedItemImage {
+    margin-right: 10px;
+    flex-shrink: 0;
+  }
+  
+  .relatedItemTitle {
+    font-size: 0.9rem;
+    margin: 0 0 5px;
+    line-height: 1.4;
+  }
+  
+  .relatedItemSource {
+    font-size: 0.8rem;
+    color: #000; /* #666 から #000（黒）に変更 */
+  }
+  
+  /* コメントセクションスタイル */
+  .commentSection {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .commentTitle {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #000; /* タイトル色を黒に設定 */
+}
+  
+  .commentForm {
+    margin-bottom: 30px;
+  }
+  
+  .commentInput {
+    width: 100%;
+    min-height: 100px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    resize: vertical;
+    border: 1px solid #000; /* 枠線を黒に変更 */
+    color: #000; /* テキスト色を黒に設定 */
+}
+  
+  .commentButton {
+    background-color: #ff0033;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .commentButton:hover {
+    background-color: #cc0033;
+  }
+  
+  .commentList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .commentItem {
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .commentHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .commentUser {
+    font-weight: bold;
+  }
+  
+  .commentTime {
+    font-size: 0.8rem;
+    color: #666;
+  }
+  
+  .commentBody {
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  .commentActions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .likeButton, .replyButton {
+    background: none;
+    border: none;
+    color: #666;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+  }
+  
+  .likeButton:hover, .replyButton:hover {
+    color: #ff0033;
+  }
+  
+  .adContainer {
+    margin-top: 30px;
+  }
+  
+  .adBanner {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #999;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* レスポンシブデザイン調整 */
+.articleTitle, .articleContent, .articleContent p {
+    color: #000; /* または black */
+}
+
+  @media (max-width: 768px) {
+    .pageContainer {
+      flex-direction: column;
+    }
+  
+    .mainContent {
+      margin-right: 0;
+    }
+  
+    .sideContent {
+      width: 100%;
+    }
+  
+    .articleTitle {
+      font-size: 1.5rem;
+    }
+  
+    .articleContent {
+      font-size: 1rem;
+    }
+  
+    .socialButtons {
+      flex-wrap: wrap;
+    }
+  
+    .shareButton, .tweetButton, .lineButton {
+      flex: 1;
+      text-align: center;
+    }
+  
+    .relatedArticles {
+      margin-top: 30px;
+    }
+  }
+  
+  /* アクセシビリティ向上のためのフォーカススタイル */
+  .shareButton:focus, .tweetButton:focus, .lineButton:focus,
+  .commentButton:focus, .likeButton:focus, .replyButton:focus {
+    outline: 2px solid #007bff;
+    outline-offset: 2px;
+  }
+  
+  /* ホバー効果 */
+  .relatedItemInner:hover .relatedItemTitle {
+    text-decoration: underline;
+  }
+  .relatedItemTitle {
+    font-size: 0.9rem;
+    margin: 0 0 5px;
+    line-height: 1.4;
+    color: #000; /* 黒色を明示的に設定 */
+  }
+  .shareButton:hover, .tweetButton:hover, .lineButton:hover {
+    opacity: 0.9;
+  }
+  
+  /* 印刷用スタイル */
+  @media print {
+    .socialButtons, .commentSection, .sideContent {
+      display: none;
+    }
+  
+    .articleContainer {
+      box-shadow: none;
+    }
+  
+    .articleContent {
+      font-size: 12pt;
+    }
+  }
